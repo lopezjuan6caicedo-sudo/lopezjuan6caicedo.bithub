@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postres y Glamur</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: #f8f9fa;
+    }
+    .card-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: #333;
+    }
+    .card-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+    .card-btn img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-btn span {
+      display: block;
+      padding: 10px;
+      font-weight: bold;
+      background: #f0f0f0;
+      width: 100%;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.8s ease forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      padding: 15px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+    .whatsapp-btn:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800">
+  <!-- Encabezado -->
+  <header class="bg-gradient-to-r from-pink-500 to-yellow-400 text-white text-center py-6 shadow-lg fade-in">
+    <img src="imagenes/logo2.png" alt="Logo" class="mx-auto w-20 h-20 rounded-full border-4 border-white">
+    <h1 class="text-3xl font-bold mt-4">Postres & Glamur</h1>
+    <p class="text-lg">"Delicias y elegancia en un solo lugar"</p>
+  </header>
+
+  <!-- Contenido -->
+  <main class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+    <!-- Sección Postres -->
+    <section class="bg-white rounded-2xl shadow-lg p-6 fade-in">
+      <h2 class="text-2xl font-bold text-pink-500 mb-4 text-center">Postres</h2>
+      <p class="text-center text-gray-600 mb-4 text-sm flex items-center justify-center gap-2">
+        <img src="https://img.icons8.com/color/24/whatsapp.png" alt="WhatsApp">
+        Toca tu postre favorito para pedir por WhatsApp.
+      </p>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <!-- 12 Postres -->
+        <a href="https://wa.me/573181217537?text=Hola%20quiero%20Cheesecake%20fresa " target="_blank" class="card-btn">
+          <img src="imagenes/CHISCAKE DE FRESA .jpg" alt="Cheesecake de fresa">
+          <span>Cheesecake de fresa</span>
+        </a>
+
+        <a href="https://wa.me/573181217537?text=Hola%20quiero%20Cheesecake%20maracuya" target="_blank" class="card-btn">
+          <img src="imagenes/CHISCAKE DE MARACUYA.jpg" alt="Cheesecake">
+          <span>Cheesecake de maracuya </span>
+        </a>
+        <a href="https://wa.me/573181217537?text=Hola%20quiero%20Cheesecake%20oreo" target="_blank" class="card-btn">
+          <img src="imagenes/CHISCAKE DE OREO.jpg" alt="Cheesecake">
+          <span>Cheesecake de oreo </span>
+        </a>
+        <a href="https://wa.me/573181217537?text=Hola%20quiero%20Cheesecake%20limon" target="_blank" class="card-btn">
+          <img src="imagenes/limon chaske.png" alt="Cheesecake">
+          <span>Cheesecake de limon</span>
+        </a>
+        <a href="https://wa.me/573181217537?text=Hola%20quiero%20gelatina de fresa" target="_blank" class="card-btn">
+          <img src="imagenes/GELATINA DE FERSA.jpg" alt="gelatina">
+          <span>Gelatina de fresa</span>
+
+        </a>
+        <a href="https://wa.me/573181217537?text=Hola%20quiero%20gelatina mosaico" target="_blank" class="card-btn">
+          <img src="imagenes/mosaico gelatina.png" alt="gelatina">
+          <span>Gelatina mosaico</span>
+        </a>
+        <a href="https://wa.me/573181217537?text=Hola%20quiero%20Mousee de fresa" target="_blank" class="card-btn">
+          <img src="imagenes/Mousee de fresa.jpg" alt="Mousee de fresa">
+          <span>Mousee de fresa</span>
+    
+        </a>
+        <a href="https://wa.me/573181217537?text=Hola%20quiero%20mochi de oreo" target="_blank" class="card-btn">
+          <img src="imagenes/mochi de oero.png" alt="mochi de oreo">
+          <span>Mochi de oreo</span>
+        </a>
+  
+    </section>
+
+    <!-- Sección Joyería -->
+    <section class="bg-white rounded-2xl shadow-lg p-6 fade-in">
+      <h2 class="text-2xl font-bold text-yellow-500 mb-4 text-center">Joyería</h2>
+      <p class="text-center text-gray-600 mb-4 text-sm flex items-center justify-center gap-2">
+        <img src="https://img.icons8.com/color/24/whatsapp.png" alt="WhatsApp">
+        Toca la joya que te guste para comprar por WhatsApp.
+      </p>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <!-- 12 Joyas -->
+        <a href="https://wa.me/573181217537?text=Hola%20quiero%20Anillo" target="_blank" class="card-btn">
+          <img src="imagenes/ANILLO.jpg" alt="Anillo ">
+          <span>Anillos</span>
+        </a>
+        <a href="https://wa.me/573181217537?text=Hola%20quiero%20Anillo" target="_blank" class="card-btn">
+          <img src="imagenes/ANILLO-1.2.jpg" alt="Anillo">
+          <span>Anillo</span>
+        </a>
+      <a href="https://wa.me/573181217537?text=Hola%20quiero%20Anillo" target="_blank" class="card-btn">
+          <img src="imagenes/ANILLOS 2.jpg" alt="Anillo">
+          <span>Anillo</span>
+        </a>
+         <a href="https://wa.me/573181217537?text=Hola%20quiero%20Sellos autoadhesivos" target="_blank" class="card-btn">
+          <img src="imagenes/sellos.jpg" alt="sellos">
+          <span>sellos autoadhesivos</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/573181217537?text=Hola,%20quiero%20más%20información" class="whatsapp-btn" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/30/ffffff/whatsapp.png" alt="WhatsApp">
+  </a>
+</body>
+</html>
+
